@@ -1,9 +1,13 @@
-import java.util.ArrayList;
 
 public class Projekti {
 	public static void main(String[] args) {
 		//loops();
-		ArraysLists.MapExample();
+		ArraysLists arraysLists = new ArraysLists();
+		
+		String emri = arraysLists.MapExample(ArraysLists.Emer.xhimret);
+		System.out.println(emri);
+		System.out.println(arraysLists.mbledh(10, 20));
+		System.out.println(arraysLists.count());
 	}
 	
 	private static void loops() {
