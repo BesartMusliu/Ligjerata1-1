@@ -1,6 +1,12 @@
+import java.util.ArrayList;
+
 public class Projekti {
 	public static void main(String[] args) {
-		
+		//loops();
+		ArraysLists.MapExample();
+	}
+	
+	private static void loops() {
 		String str = "123456";
 		
 		for (int i = 0; i < str.length(); ++i) {
@@ -24,6 +30,5 @@ public class Projekti {
 			System.out.println(str.charAt(j));
 			++j;
 		}
-		
 	}
 }
