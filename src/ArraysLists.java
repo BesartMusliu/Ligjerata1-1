@@ -4,6 +4,21 @@ import java.util.List;
 import java.util.Map;
 
 public class ArraysLists {
+	
+	HashMap<Emer, String> map = new HashMap<Emer, String>();
+	
+	public enum Emer {
+		hajdar,
+		emrush,
+		xhimret
+	}
+	
+	public ArraysLists() {
+		map.put(Emer.hajdar, "Hajdar");
+		map.put(Emer.emrush, "Emrush");
+		map.put(Emer.xhimret, "Xhimret");
+	}
+	
 	public static void ArraysExample() {
 		String[] arr = new String[5];
 		arr[0] = "2";
@@ -31,20 +46,16 @@ public class ArraysLists {
 		}
 	}
 	
-	public enum Emrat {
-		hajdar,
-		e,
-		xh
+	public String MapExample(Emer emri) {		
+		return map.get(emri);
 	}
-	public static void MapExample() {
-		
-		HashMap<Emrat, String> map = new HashMap<Emrat, String>();
-		map.put(Emrat.hajdar, "Hajdar");
-		map.put(Emrat.e, "Emrush");
-		map.put(Emrat.xh, "Xhimret");
-		
-		System.out.println(map.get(Emrat.hajdar));
-		
+	
+	public int mbledh(int a, int b) {
+		return a + b;
+	}
+	
+	public int count() {
+		return map.size();
 	}
 }
 
