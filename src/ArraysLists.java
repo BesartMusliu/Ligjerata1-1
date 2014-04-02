@@ -58,19 +58,3 @@ public class ArraysLists {
 		return map.size();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
